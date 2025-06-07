@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-secondary);
+}
+
+:root {
+  --bg: #E3F2FD;
+  --surface: #FFFFFF;
+  --text-primary: #0D47A1;
+  --text-secondary: #546E7A;
+  --accent: #29B6F6;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+header h1{
+    color: var(--text-primary);
+    font-size: 4em;
+    text-align: center;
+}
+
+section{
+    margin: auto;
+    width: 70%;
+}
+
+form{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px;
+}
+
+input{
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+button{
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--accent);
+    color: var(--text-primary);
+}
+
+#resultado{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+#resultado h2{
+    color: var(--text-primary);
+    font-size: 2em;
+    text-align: center;
+}
+
+#resultado span{
+    color: var(--text-primary);
+}
+
+.resultado-card{
+    background-color: var(--surface);
+    border-radius: 8px;
+    margin: 30px;
+    min-width: 500px;
+}
+
+.resultado-content{
+    margin: 30px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+footer{
+    margin-top: 330px;
+    text-align: center;
+}

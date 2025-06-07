@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP | Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Consulta CEP | Clima</h1>
+            <form>
+                <input type="number" id="cep" placeholder="Inserir CEP">
+                <button type="button" id="btn-buscar">Buscar</button>
+            </form>
+        </header>
+        <div id="msg-erro"></div>
+        <div id="resultado">
+            <div class="resultado-card">
+                <div class="resultado-content">
+                    <h2>Dados do CEP</h2>
+                    <div class="info">
+                        <p>Cidade:</p>
+                        <p id="cidade"></p>
+                    </div>
+                    <div class="info">
+                        <p>UF:</p>
+                        <p id="uf"></p>
+                    </div>
+                    <div class="info">
+                        <p>Bairro:</p>
+                        <p id="bairro"></p>
+                    </div>
+                    <div class="info">
+                        <p>Rua:</p>
+                        <p id="rua"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado-card">
+                <div class="resultado-content">
+                    <h2>Dados do Clima <span id="cidade-title">da Cidade</span></h2>
+                    <div class="info">
+                        <p>Temperatura:</p>
+                        <p id="temperatura"></p>
+                    </div>
+                    <div class="info">
+                        <p>Clima:</p>
+                        <p id="clima"></p>
+                    </div>
+                    <div class="info">
+                        <p>Umidade:</p>
+                        <p id="umidade"></p>
+                    </div>
+                    <div class="info">
+                        <p>Vento:</p>
+                        <p id="vento"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p> CEP e Meteorologia - Davi Santana e Reginaldo Sacramento - 2025 </p>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
